@@ -112,3 +112,69 @@ img:hover {
 .checkmark {
     cursor: pointer;
   }
+
+  @media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 80px 20px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    a {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    button:hover {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .Generate {
+        width: 150px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .copy-button1, .copy-button2 {
+        width: 180px;
+    }
+}
+
+/* Media Queries for Phones */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 60px 10px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    a {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    button:hover {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    .Generate {
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+        justify-content: space-around;
+    }
+    .copy-button1, .copy-button2 {
+        width: 150px;
+    }
+}
