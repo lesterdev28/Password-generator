@@ -1,0 +1,114 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+}
+
+.container {
+    width: 450px;
+    height: auto;
+    background: #1F2937;
+    display: block;
+    margin: 100px auto;
+    padding: 110px 52px;
+    border-radius: 5%;
+    border: solid 5px #D5D4D8;
+}
+h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0px auto;
+}
+
+a {
+    color: #4ADF86;
+    font-weight: bold;
+    font-size: 40px;
+} 
+
+h3 {
+    color: #D5D4D8;
+    font-weight: normal;
+    font-size: 20px;
+}
+button {
+    background: #10B981;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+button:hover {
+    background: transparent;
+    color: #10B981;
+    border: solid 1px #10B981;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.passwordContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-top: solid 1px #4B5563;
+    padding-top: 20px;
+}
+.Generate {
+    background: #273549;
+    width: 180px;
+    height: 39px;
+    border-radius: 6px;
+    border: none;
+    color: #55F991;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input {
+    text-align: center;
+    font-size: large;
+    background: none;
+    border: none;
+}
+img {
+    width: 25px;
+    height: 25px;
+    margin-right: auto;
+    opacity: 0.5;
+    cursor: pointer;
+}
+img:hover {
+    width: 25px;
+    margin-right: auto;
+    opacity: 1;
+}
+.copy-button1, .copy-button2 {
+    background: #273549;
+    padding: 0px 4px 0px auto;
+    width : 220px;
+    border-radius: 6px;
+    border: none;
+    color: #55F991;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.switch {
+    width: 60px;
+    height: 34px;
+    position: relative;
+    color: #fff;
+}
+.checkmark {
+    cursor: pointer;
+  }
