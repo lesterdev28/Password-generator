@@ -54,7 +54,7 @@ button:hover {
 
 .passwordContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 20px;
     border-top: solid 1px #4B5563;
     padding-top: 20px;
@@ -172,7 +172,7 @@ img:hover {
         width: 120px;
         height: 30px;
         font-size: 12px;
-        justify-content: space-around;
+        display: flex;
     }
     .copy-button1, .copy-button2 {
         width: 150px;
