@@ -14,24 +14,27 @@
         <h1>Generate a <br/><a>random password</a></h1>
         <h3>Never use an insecure password again.</h3>
         <button id="generate-button">Generate Passwords</button>
+        <div class="checkboxContainer">
             <input class="checkmark" type="checkbox" id="include-numbers" checked>
             <label for="include-numbers">Numbers</label>
             <input class="checkmark" type="checkbox" id="include-symbols" checked>
             <label for="include-symbols">Symbols</label>
+        </div>
         <div class="passwordContainer">
-            <div class="copy-button1">
+            <div class="copy-button">
                 <div id="passwords" class="Generate">
                     <input type="text" id="input" placeholder="Password 1" readonly>
                 </div>
                 <img src="images/copy.png" alt="copy" id="copy" onclick="copyToClipboard()">
             </div>
-            <div class="copy-button2">
+            <div class="copy-button">
                 <div id="passwords1" class="Generate">
                     <input type="text" id="input1" placeholder="Password 2" readonly>
                 </div>
                 <img src="images/copy.png" alt="copy" id="copy1" onclick="copyToClipboard()">
             </div>
         </div>
+        <button class="reset-el" id="reset-el">Reset</button>
     </div>
     <script src="script.js"></script>
 </body>
