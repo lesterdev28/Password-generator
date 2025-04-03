@@ -33,8 +33,8 @@ h3 {
 }
 button {
     background: #10B981;
+    border: solid 1px #10B981;
     color: #fff;
-    border: none;
     border-radius: 3px;
     padding: 10px 20px;
     cursor: pointer;
@@ -47,6 +47,28 @@ button:hover {
     border: solid 1px #10B981;
     border-radius: 3px;
     padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.reset-el {
+    background: #10B981;
+    border: solid 1px #10B981;
+    color: #fff;
+    border-radius: 25px;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.reset-el:hover {
+    background: transparent;
+    color: #10B981;
+    border: solid 1px #10B981;
+    border-radius: 25px;
+    padding: 5px 15px;
     cursor: pointer;
     margin-top: 20px;
     font-size: 16px;
@@ -73,27 +95,69 @@ button:hover {
     cursor: pointer;
 }
 
-input {
+.checkboxContainer {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkmark {
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #10B981;
+    padding: 0px;
+    margin: auto 0px auto 10px;
+
+}
+
+input[type="checkbox"]:checked {
+    content: '';
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #10B981;
+    font-size: 18px;
+    text-align: center;
+}
+input[type="checkbox"]:checked::after {
+    content: '✓';
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+}
+
+input[type="text"] {
     text-align: center;
     font-size: large;
+    padding: 5px;
+    width: 100%;
     background: none;
     border: none;
 }
+
 img {
     width: 25px;
     height: 25px;
-    margin-right: auto;
     opacity: 0.5;
     cursor: pointer;
+    margin: 0px auto;
 }
 img:hover {
     width: 25px;
-    margin-right: auto;
     opacity: 1;
 }
-.copy-button1, .copy-button2 {
+.copy-button {
     background: #273549;
-    padding: 0px 4px 0px auto;
     width : 220px;
     border-radius: 6px;
     border: none;
@@ -103,15 +167,11 @@ img:hover {
     align-items: center;
     cursor: pointer;
 }
-.switch {
-    width: 60px;
-    height: 34px;
-    position: relative;
+label {
     color: #fff;
+    padding: 0px 0px 0px 0px;
 }
-.checkmark {
-    cursor: pointer;
-  }
+
 
   @media (max-width: 768px) {
     .container {

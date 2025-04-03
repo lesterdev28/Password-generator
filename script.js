@@ -9,6 +9,9 @@ const resetEl = document.querySelector("#reset-el");
 const includeNumbersCheckbox = document.querySelector("#include-numbers");
 const includeSymbolsCheckbox = document.querySelector("#include-symbols");
 
+includeNumbersCheckbox.checked = false;
+includeSymbolsCheckbox.checked = false;
+
 generateButton.addEventListener("click", function() {
     passwordEl.textContent = "";
     passwordEl1.textContent = "";
@@ -21,7 +24,7 @@ generateButton.addEventListener("click", function() {
         characters = characters.concat(symbols);
     }
 
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < 16; i++) {
         let randomPassword = Math.floor(Math.random()*characters.length)
         let randomPassword1 = Math.floor(Math.random()*characters.length)
         passwordEl.textContent += characters[randomPassword]
@@ -30,11 +33,15 @@ generateButton.addEventListener("click", function() {
 })
 
 passwordEl.addEventListener("click", function() {
-    copyToClipboard(passwordEl.textContent);
+    if (!passwordEl.textContent === "") {
+        copyToClipboard(passwordEl.textContent);
+    }
 });
 
 passwordEl1.addEventListener("click", function() {
-    copyToClipboard(passwordEl1.textContent);
+    if (!passwordEl1.textContent === "") {
+        copyToClipboard(passwordEl1.textContent);
+    }
 });
 
 function copyToClipboard(text) {
@@ -46,3 +53,10 @@ function copyToClipboard(text) {
     document.body.removeChild(textarea);
     alert("Password copied to clipboard!");
 }
+
+resetEl.addEventListener("click", function() {
+    passwordEl.innerHTML = '<input type="text" id="input" placeholder="Password 1" readonly>';
+    passwordEl1.innerHTML = '<input type="text" id="input1" placeholder="Password 2" readonly>';
+    includeNumbersCheckbox.checked = false;
+    includeSymbolsCheckbox.checked = false;
+});
